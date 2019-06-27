@@ -22,7 +22,7 @@ if (process.argv.length < 3) {
 
 function update()
 {
-    fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD&api_key=' + process.env.API_KEY)
+    fetch('https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD')
     .then(result => result.json())
     .then(result => {
         console.log(result);
